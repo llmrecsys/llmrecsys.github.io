@@ -44,6 +44,9 @@ Finally, we introduce existing industrial LLM systems that support recommender f
 ----------------
 # Material
 
+{{< figure src="img/table.jpg" width="500">}}
+
+Slides: 
 
 
 
