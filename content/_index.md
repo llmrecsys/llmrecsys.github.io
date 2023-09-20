@@ -53,7 +53,7 @@ Slides:
 ----------------
 
 # Presenters
-**Wenyue Hua** is a PhD student in the Department of Computer Science at Rutgers University under the supervision of Prof. Yongfeng Zhang. Her research interest focuses on the intersection of Natural Language Processing and Recommender Systems. Her current research focuses on LLM and its application on recommendation. In the previous she did her BA in Linguistics and BS in Mathematics at UCLA. Her research appears on ACL, EMNLP, ICLR, etc. and she is actively serving as a reviewer for conferences such as RecSys, WWW, SIGIR, TACL, ICLR, and EMNLP. 
+**Wenyue Hua** is a PhD student in the Department of Computer Science at Rutgers University under the supervision of Prof. Yongfeng Zhang. Her research interest focuses on the intersection of Natural Language Processing and Recommender Systems. Her current research focuses on LLM and its application on recommendation. In the previous she did her BA in Linguistics and BS in Mathematics at UCLA. Her research appears on SIGIR, TACL, EMNLP, ICLR, etc. and she is actively serving as a reviewer for conferences such as RecSys, WWW, SIGIR, ACL, and EMNLP. 
 
 **Lei Li** is a post-doc at the Department of Computer Science, Hong Kong Baptist University (HKBU), and a visiting researcher at the Department of Computer Science, Rutgers University. He has been working on large pre-trained language models for recommender systems. He did PhD at the same department at HKBU and worked on large language models for explainable recommendation. His research appears on SIGIR, WWW, ACL, CIKM, TOIS, etc. and he regularly serves as PC member or reviewer for conferences and journals such as WWW, RecSys, TKDE, TOIS, etc.
 
