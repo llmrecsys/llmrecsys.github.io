@@ -1,0 +1,5 @@
+baseURL = 'http://example.org/'
+languageCode = 'en-us'
+title = 'LLM4RS-tutorial-recsys2023'
+
+theme = 'adam-eve'
