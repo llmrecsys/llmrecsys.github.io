@@ -44,7 +44,7 @@ Finally, we introduce existing industrial LLM systems that support recommender f
 ----------------
 # Material
 
-{{< figure src="img/firstpage.png" width="1000">}}
+{{< figure src="img/firstpage.png" width="900">}}
 
 Slides: [Tutorial slides](img/LLM4RecSys_Tutorial.pdf)
 
