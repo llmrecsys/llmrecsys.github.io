@@ -42,6 +42,12 @@ We introduce existing open-source models and platforms to facilitate LLM-based r
 Finally, we introduce existing industrial LLM systems that support recommender functionality and their advantages and problems to improve. Examples include ChatGPT, Microsoft Bing and Google Bard.
 
 ----------------
+# Material
+
+
+
+
+----------------
 
 # Presenters
 **Wenyue Hua** is a PhD student in the Department of Computer Science at Rutgers University under the supervision of Prof. Yongfeng Zhang. Her research interest focuses on the intersection of Natural Language Processing and Recommender Systems. Her current research focuses on LLM and its application on recommendation. In the previous she did her BA in Linguistics and BS in Mathematics at UCLA. Her research appears on ACL, EMNLP, ICLR, etc. and she is actively serving as a reviewer for conferences such as RecSys, WWW, SIGIR, TACL, ICLR, and EMNLP. 
