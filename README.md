@@ -1,5 +1,5 @@
 # RecSys 2023 Tutorial: Large Language Models for Recommendation
-[Homepage](https://wenyueh.github.io/LLM4RS-tutorial-recsys2023/)
+[Homepage](https://llmrecsys.github.io/)
 
 The code is adapted from the [Nerfies website](https://nerfies.github.io).
 
