@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="Deformable Neural Radiance Fields creates free-viewpoint portraits (nerfies) from casually captured videos.">
+  <meta name="keywords" content="Nerfies, D-NeRF, NeRF">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>RecSys 2023 Tutorial: Large Language Models for Recommendation</title>
+
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/favicon.svg">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+</nav>
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-2 publication-title">
+              <span style="font-size: 80%">RecSys 2023 Tutorial:</span><br />
+              Large Language Models for Recommendation
+            </h1>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <table>
+            <tr>
+                <!-- <th scope="row">TR-7</th> -->
+                <td width="20%" style="text-align: center; padding: 3px"><img width="150px" height="150px" src="static/imgs/wenyue.png"></td>
+                <td width="20%" style="text-align: center; padding: 3px"><img width="150px" height="150px" src="static/imgs/lei.png"></td>
+                <td width="20%" style="text-align: center; padding: 3px"><img width="150px" height="150px" src="static/imgs/shuyuan.png"></td>
+                <td width="20%" style="text-align: center; padding: 3px"><img width="150px" height="150px" src="static/imgs/li.png"></td>
+                <td width="20%" style="text-align: center; padding: 3px"><img width="150px" height="150px" src="static/imgs/yongfeng.jpg"></td>
+            </tr>
+              <tr>
+                <!-- <th scope="row">TR-7</th> -->
+                <td width="20%" style="text-align: center"><a href="https://scholar.google.com/citations?user=Yqw8P-QAAAAJ&hl=en" style="border-radius: 50%">Wenyue Hua</a><sup>1</sup>,</td>
+                <td width="20%" style="text-align: center"><a href="https://lileipisces.github.io/" style="border-radius: 50%">Lei Li</a><sup>2</sup>,</td>
+                <td width="20%" style="text-align: center"><a href="https://shuyuan-x.github.io/" style="border-radius: 50%">Shuyuan Xu</a><sup>1</sup>,</td>
+                <td width="20%" style="text-align: center"><a href="https://www.comp.hkbu.edu.hk/~lichen/" style="border-radius: 50%">Li Chen</a><sup>2</sup></td>
+                <td width="20%" style="text-align: center"><a href="http://www.yongfeng.me/" style="border-radius: 50%">Yongfeng Zhang</a><sup>1</sup></td>
+              </tr>
+            </table>
+              <!-- <a href="https://akariasai.github.io/">Akari Asai</a><sup>1</sup>,</span>
+            <span class="author-block">
+              <a href="https://shmsw25.github.io/">Sewon Min</a><sup>1</sup>,</span>
+            <span class="author-block">
+              <a href="https://www.cs.princeton.edu/~zzhong/">Zexuan Zhong</a><sup>2</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://www.cs.princeton.edu/~danqic/">Danqi Chen</a><sup>2</sup>, -->
+            </span>
+          </div>
+          <div class="is-size-6 publication-authors">
+            <span class="author-block"><sup>1</sup>Rutgers University,</span>
+            <span class="author-block"><sup>2</sup>Hong Kong Baptist University</span>
+          </div>
+          <br />
+          <div class="is-size-5 publication-authors">
+            <b>Tuesday September 19 14:00 - 15:20 (SST) @ Suntec Convention Centre</b>
+          </div>
+          
+
+          <!-- <div class="is-size-5 publication-authors">
+            Zoom link available on <a href="https://underline.io/events/395/sessions?eventSessionId=15330&searchGroup=lecture" target="_blank">Underline</a>
+          </div>
+          <div class="is-size-6 publication-authors">
+            For those who have not registered to ACL: we will release video recordings after the tutorial
+          </div>
+          <br />
+          <div class="is-size-5 publication-authors">
+            QnA: <a href="https://tinyurl.com/retrieval-lm-tutorial" target="_blank"><b>tinyurl.com/retrieval-lm-tutorial</b></a>
+          </div>-->
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">About this tutorial</h2>
+        <div class="content has-text-justified">
+          <!--<p>
+            Language models (LMs) such as GPT-3 (Brown et al., 2020) and PaLM (Chowdhery et al., 2022) have shown impressive abilities in a range of natural language processing (NLP) tasks. 
+            However, relying solely on their parameters to encode a wealth of world knowledge requires a prohibitively large number of parameters and hence massive computing, and they often struggle to learn long-rail knowledge (Roberts et al., 2020; Kandpal et al., 2022; Mallen et al., 2022). 
+            Moreover, these parametric LMs are fundamentally incapable of adapting over time (De Cao et al., 2021; Lazaridou et al., 2021; Kasai et al., 2022), often hallucinate (Shuster et al., 2021), and may leak private data from the
+            training corpus (Carlini et al., 2021). To overcome these limitations, there has been growing interest in retrieval-based LMs (Guu et al., 2020; Khandelwal et al., 2020; Borgeaud et al., 2022; Zhong et al., 2022; Izacard et al., 2022b; Min et al., 2022),
+            which incorporate a non-parametric datastore (e.g., text chunks from an external corpus) with their parametric counterparts. Retrieval-based LMs can outperform LMs without retrieval by a large margin with much fewer parameters (Mallen et al., 2022), can update their knowledge by replacing their retrieval corpora (Izacard et al., 2022b), and provide citations for users to easily verify and evaluate the predictions (Menick et al., 2022; Bohnet et al., 2022).
+          </p>
+          <p>
+            In this tutorial, we aim to provide a comprehensive and coherent overview of recent
+            advances in retrieval-based LMs. We will start
+            by first providing preliminaries covering the foundations of LM (e.g., masked LMs, autoregressive LMs) and retrieval systems (e.g., nearest-neighbor search methods widely used in neural retrieval systems; Karpukhin et al. 2020). We will then focus
+            on recent progress in architectures, learning approaches, and applications of retrieval-based LMs.
+          </p>-->
+          <p>
+            Foundation Models such as Large Language Models (LLMs) have significantly advanced many research areas. In particular, LLMs offer significant advantages for recommender systems, making them valuable tools for personalized recommendations. For example, by formulating various recommendation tasks such as rating prediction, sequential recommendation, straightforward recommendation, and explanation generation into language instructions, LLMs make it possible to build universal recommendation engines that can handle different recommendation tasks. Additionally, LLMs have a remarkable capacity for understanding natural language, enabling them to comprehend user preferences, item descriptions, and contextual information to generate more accurate and relevant recommendations, leading to improved user satisfaction and engagement. This tutorial introduces Foundation Models such as LLMs for recommendation. We will introduce how recommender system advanced from shallow models to deep models and to large models, how LLMs enable generative recommendation in contrast to traditional discriminative recommendation, and how to build LLM-based recommender systems. We will cover multiple perspectives of LLM-based recommendation, including data preparation, model design, model pre-training, fine-tuning and prompting, multi-modality and multi-task learning, as well as trustworthy perspectives of LLM-based recommender systems such as fairness and transparency.
+          </p>
+          <p>
+            In this tutorial, we aim to provide a comprehensive and coherent overview of recent
+            advances in LLM for recommender system. We will start
+            by first providing preliminaries covering the foundations of recommender systems. We will then focus
+            on recent progress in model structure, trustworthiness, and a development framework for large language models on recommender systems.
+          </p>
+          <td width="100%" style="text-align: center; padding: 3px"><img width="750px" height="750px" src="static/imgs/table.png"></td>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+
+    <!-- Paper video. -->
+    <!--/ Paper video. -->
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Schedule [<a href="https://www.yongfeng.me/attach/LLM4RecSys.pdf"><b>Slides</b></a>]</h2>
+        <p>
+          Our tutorial was held on September 19 (all the times are based on SST = Singapore standard time).
+        </p>
+
+        <div class="content has-text-justified">
+
+          <style type="text/css">
+          .tg  {border-collapse:collapse;border-spacing:0;}
+          .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+            overflow:hidden;padding:10px 5px;word-break:normal;}
+          .tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+            font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+          .tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
+          .tg .tg-0lax{text-align:left;vertical-align:top}
+          </style>
+          <table class="tg">
+          <thead>
+            <tr>
+              <th class="tg-0pky">Time</th>
+              <th class="tg-0lax">Section</th>
+              <th class="tg-0lax">Presenter</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="tg-0lax">14:00—14:10</td>
+              <td class="tg-0lax">Section 1: Introduction and Background</td>
+              <td class="tg-0lax">Yongfeng</td>
+            </tr>
+            <tr>
+              <td class="tg-0lax">14:10—14:40</td>
+              <td class="tg-0lax">Section 2: Large Language Models for Recommendation</td>
+              <td class="tg-0lax">Lei</td>
+            </tr>
+            <tr>
+              <td class="tg-0lax">14:40—15:00</td>
+              <td class="tg-0lax">Section 3: Trustworthy LLMs for Recommendation</td>
+              <td class="tg-0lax">Wenyue</td>
+            </tr>
+            <tr>
+              <td class="tg-0lax">15:00—15:10</td>
+              <td class="tg-0lax">Section 4: Hands-on Demo of LLM-RecSys Development based on OpenP5</td>
+              <td class="tg-0lax">Shuyuan</td>
+            </tr>
+            <tr>
+              <td class="tg-0lax">15:10—15:15</td>
+              <td class="tg-0lax">Section 5: Summary</td>
+              <td class="tg-0lax">Lei</td>
+            </tr>
+            <tr>
+              <td class="tg-0lax">15:15—15:30</td>
+              <td class="tg-0lax">Q & A</td>
+              <td class="tg-0lax"></td>
+            </tr>
+          </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- Concurrent Work. -->
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <br />
+        
+        
+        <h3 class="title is-3">Tutorial Outline</h3>
+
+        <ul>
+          <h2 class="title is-4">Introduction</h2>
+          <p>We introduce datasets that facilitate LLM-based recommendation models. This is particularly important for data-centric machine learning such as LLM-based recommender systems, since the pre-training of LLMs largely determines the ability and utility of LLM-based recommendation.</p>
+          <br />
+          <h2 class="title is-4">Large language models for recommender system</h2>
+          <p>We organize and introduce recent LLM-based recommendation models, their relationships, various pre-training, fine-tuning and prompting strategies of LLM-based recommendation models, and possible directions for future improvements.</p>
+          <br />
+          <h2 class="title is-4">Trustworthy Large language models for recommender system</h2>
+          <p>We introduce research on the trustworthiness on LLM-based recommender models, including hallucination, fairness, transparency, robustness, and controllability.</p>
+          <br />
+          <h2 class="title is-4">Toolkit</h2>
+          <p>We introduce existing open-source models and platforms to facilitate LLM-based recommendation research, including both LLM backbones such as T5 and LLaMA, and LLM-based recommendation platforms such as OpenP5.</p>
+          <br />
+          <h2 class="title is-4">Real-world systems</h2>
+          <p>Finally, we introduce existing industrial LLM systems that support recommender functionality and their advantages and problems to improve. Examples include ChatGPT, Microsoft Bing and Google Bard.</p>
+        </ul>
+        <br />
+
+      <h3 class="title is-3">Presenter</h3>
+
+        <ul>
+          <p><b>Wenyue Hua</b> is a PhD student in the Department of Computer Science at Rutgers University under the supervision of Prof. Yongfeng Zhang. Her research interest focuses on the intersection of Natural Language Processing and Recommender Systems. Her current research focuses on LLM and its application on recommendation. In the previous she did her BA in Linguistics and BS in Mathematics at UCLA. Her research appears on SIGIR, TACL, EMNLP, ICLR, etc. and she is actively serving as a reviewer for conferences such as RecSys, WWW, SIGIR, ACL, and EMNLP.</p>
+          <br />
+          <p><b>Lei Li</b> is a post-doc at the Department of Computer Science, Hong Kong Baptist University (HKBU), and a visiting researcher at the Department of Computer Science, Rutgers University. He has been working on large pre-trained language models for recommender systems. He did PhD at the same department at HKBU and worked on large language models for explainable recommendation. His research appears on SIGIR, WWW, ACL, CIKM, TOIS, etc. and he regularly serves as PC member or reviewer for conferences and journals such as WWW, RecSys, TKDE, TOIS, etc.</p>
+          <br />
+          <p><b>Shuyuan Xu</b> is a PhD student in the Department of Computer Science at Rutgers University supervised by Prof. Yongfeng Zhang. His research interest lies in the intersection of Machine Learning and Information Retrieval. His current research focuses on large language models for recommendation. He has published on RecSys, SIGIR, WWW, CIKM, ICTIR, TORS, IJCAI, WSDM, etc. and he is actively serving as reviewer for conferences or journals such as AAAI, SIGIR, WWW, CIKM, RecSys, KDD, ACM TOIS, ACM TORS, IEEE TKDE. He co-organized the Tutorial on Advances in Simulation Technology for Web Applications at WWW 2023.</p>
+          <br />
+          <p><b>Li Chen</b> is Associate Head (Research) and Associate Professor at the Department of Computer Science, Hong Kong Baptist University. Her research focus is on developing trustworthy and responsible data-driven personalization systems, which integrate research in artificial intelligence, recommender systems, user modeling, and user behavior analytics for the application in various domains including social media, e-commerce, online education, and mental health. She has authored and co-authored over 100 publications, most of which appear in high-impact journals (such as IJHCS, TOCHI, UMUAI, TIST, TIIS, KNOSYS, Behavior & Information Technology, AI Magazine, and IEEE Intelligent Systems), and key conferences in the areas of data mining (SIGKDD, SDM), artificial intelligence (IJCAI, AAAI), recommender systems (ACM RecSys), user modeling (UMAP), and intelligent user interfaces (CHI, IUI, Interact). She is now an ACM senior member, co-editor-in-chief of ACM Transactions on Recommender Systems (TORS), editorial board member of User Modeling and User-Adapted Interaction Journal (UMUAI), and associate editor of ACM Transactions on Interactive Intelligent Systems (TiiS). She has also been serving in a number of journals and conferences as guest editor, general co-chair, program co-chair, and senior PC member.</p>
+          <br />
+          <p><b>Yongfeng Zhang</b> is an Assistant Professor in the Department of Computer Science at Rutgers University. His research interest is in Information Retrieval, Recommender Systems, Machine Learning, Data Mining and Natural Language Processing. In the previous he was a postdoc in the Center for Intelligent Information Retrieval (CIIR) at UMass Amherst, and did his PhD and BE in Computer Science at Tsinghua University, with a BS in Economics at Peking Univeristy. He is a Siebel Scholar of the class 2015. He has been consistently working on recommender system research including explainable recommendation, fairness-aware recommendation, conversational recommendation, and large language models for recommendation. His research appears on related conferences such as RecSys, SIGIR, WWW, CIKM, WSDM, KDD, TOIS, TORS, etc. He serves as Associate Editor for ACM Transactions on Information Systems (TOIS) and ACM Transactions on Recommender Systems (TORS) and senior PC member or area chair for RecSys, SIGIR, WWW, KDD, CIKM, AAAI, etc. He has co-organized Tutorial on Explainable Recommendation and Search (WWW, SIGIR, ICTIR), Tutorial on Conversational Recommendation Systems (RecSys, WSDM, IUI), and Tutorial on Fairness of Machine Learning in Recommender Systems (SIGIR, CIKM).</p>
+          
+        </ul>
+        
+      </div>
+    </div>
+</section>
+
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@inproceedings{llm-rs-tutorial,
+  title={Tutorial on Large Language Models for Recommendation},
+  author={Hua, Wenyue and Li, Lei and Xu, Shuyuan and Chen, Li and Zhang, Yongfeng},
+  booktitle={Proceedings of the 17th ACM Conference on Recommender Systems},
+  pages={1281--1283},
+  year={2023}
+}</code></pre>
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+      <a class="icon-link" href="https://github.com/ACL2023-Retrieval-LM" class="external-link" disabled>
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            This website is licensed under a <a rel="license"
+                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+          <p>
+            This website is based on <a
+              href="https://github.com/nerfies/nerfies.github.io">source code</a> and <a
+              href="https://acl2023-retrieval-lm.github.io/">ACL2023 Retrieval LM tutorial</a>, which are free to borrow.
+            We just ask that you link back to this page in the footer.
+            Please remember to remove the analytics code included in the header of the website which
+            you do not want on your website.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
