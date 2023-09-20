@@ -29,7 +29,7 @@ We organize and introduce recent LLM-based recommendation models, their relation
 
 ## Trustworthy LLM4RS
 
-We introduce research on the trustworthiness on LLM4RS, including hallucination, fairness, transparency, robustness, and controllability.
+We introduce research on the trustworthiness on LLM-based recommender models, including hallucination, fairness, transparency, robustness, and controllability.
 
 
 ## Toolkit
