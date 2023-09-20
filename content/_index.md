@@ -27,7 +27,7 @@ We introduce datasets that facilitate LLM-based recommendation models. This is p
 We organize and introduce recent LLM-based recommendation models, their relationships, various pre-training, fine-tuning and prompting strategies of LLM-based recommendation models, and possible directions for future improvements.
 
 
-## Trustworthy LLM4RS
+## Trustworthy Large language models for recommender system
 
 We introduce research on the trustworthiness on LLM-based recommender models, including hallucination, fairness, transparency, robustness, and controllability.
 
