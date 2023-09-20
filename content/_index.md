@@ -4,7 +4,7 @@ date: 2018-08-12T20:52:14+02:00
 draft: false
 ---
 
-{{< figure src="img/home.jpg" width="300">}}
+{{< figure src="img/table.jpg" width="500">}}
 
 An **aquarium** (plural: aquariums or aquaria) is a vivarium of any size having at least one transparent side in which aquatic plants or animals are kept and displayed. Fishkeepers use aquaria to keep fish, invertebrates, amphibians, aquatic reptiles such as turtles, and aquatic plants. The term "aquarium", coined by English naturalist Philip Henry Gosse, combines the Latin root aqua, meaning water, with the suffix -arium, meaning "a place for relating to".
 
