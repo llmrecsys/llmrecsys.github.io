@@ -68,4 +68,4 @@ Slides:
 
 # External links
 
-  * {{< remote "Wikipedia page used as example" "https://en.wikipedia.org/wiki/Aquarium" >}}
+  * {{< remote "OpenP5 framework" "https://github.com/agiresearch/OpenP5" >}}
